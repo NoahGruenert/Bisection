@@ -15,6 +15,7 @@ You can read more about the math behind this operation here.
     https://en.wikipedia.org/wiki/Bisection_method
     
 ******************Read the Full Code******************************************************************************************************
+
  Bisection > Program.cs
  
  The C# program described below is available in the Bisection Folder, and is titled Program.cs, by convention. 
