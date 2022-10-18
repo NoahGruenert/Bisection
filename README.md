@@ -2,6 +2,7 @@
 C# Console App for Bisection of F(x) to find root on [a,b]
 
 ******************Overview of Bisection in Math**************************************************************************************************
+
 Bisection is a way to find the real roots of a polynomial function, along an interval [A,B] where F(A) and F(B) have opposite signs. 
 This guarantees at least one root (a point where F(x) = 0 ) will lie between points A and B.
 
@@ -14,6 +15,7 @@ You can read more about the math behind this operation here.
     https://en.wikipedia.org/wiki/Irrational_number
 
 ******************How this C# program works******************************************************************************************************
+
 This C# program uses a bisection method when provided with an interval [A,B] in which at least one root exists as a non-imaginary number. 
 The user may provide an interval, as well as an epsilon value for the smallest distance between A and B for the bisection to trim down to. 
 A midpoint C is calculated between A and B, and the program then passes these 4 arguments to the bisection method for operation. 
@@ -48,4 +50,9 @@ to the instance of the Returners structure it is using,
 and then returns that instance to the main Method for printing the outcome in the console, for the user to see.
 
 
-************************************************************************************************************************
+******************Notes*****************************************************************************************************
+
+This program was straightforward to implement, but there are several things to say for others working on a similar exercise.
+A more advanced version of this program would be able to accept user input of the function F(x) by reading the inputted string, but this was beyond the scope of my exercise here.
+A more mathematical version might be concerned with a greater degree of certainty, which I have included to some degree with the epsilon value. Using doubles rather than floats for the operation would be more accurate, but for a general purpose algorithm, floats are sufficiently accurate.
+
