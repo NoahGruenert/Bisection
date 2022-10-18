@@ -54,5 +54,6 @@ and then returns that instance to the main Method for printing the outcome in th
 
 This program was straightforward to implement, but there are several things to say for others working on a similar exercise.
 A more advanced version of this program would be able to accept user input of the function F(x) by reading the inputted string, but this was beyond the scope of my exercise here.
+
 A more mathematical version might be concerned with a greater degree of certainty, which I have included to some degree with the epsilon value. Using doubles rather than floats for the operation would be more accurate, but for a general purpose algorithm, floats are sufficiently accurate.
 
