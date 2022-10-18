@@ -12,8 +12,12 @@ Otherwise, if for instance the root of the polynomial is an irrational number,
 the bisection can trim the distance between A and B to be miniscule enough to make a close estimate of C at F(C) = nearly 0. 
 
 You can read more about the math behind this operation here. 	
-    https://en.wikipedia.org/wiki/Irrational_number
-
+    https://en.wikipedia.org/wiki/Bisection_method
+    
+******************Read the Full Code******************************************************************************************************
+ Bisection > Program.cs
+ 
+ The C# program described below is available in the Bisection Folder, and is titled Program.cs, by convention. 
 ******************How this C# program works******************************************************************************************************
 
 This C# program uses a bisection method when provided with an interval [A,B] in which at least one root exists as a non-imaginary number. 
