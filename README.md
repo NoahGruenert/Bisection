@@ -18,6 +18,7 @@ You can read more about the math behind this operation here.
  Bisection > Program.cs
  
  The C# program described below is available in the Bisection Folder, and is titled Program.cs, by convention. 
+ 
 ******************How this C# program works******************************************************************************************************
 
 This C# program uses a bisection method when provided with an interval [A,B] in which at least one root exists as a non-imaginary number. 
