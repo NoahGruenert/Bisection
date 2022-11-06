@@ -48,7 +48,6 @@ class Bisection
    public Returners Bisect(float a, float b, float c, double e)
    {
       int i = 0;                          //counter for loop iterations
-      F(c);                               //initial calculation of F(c);
       Returners q = new Returners();      // build a new Returners structure, for returning the c value of F(c) = 0, and the # of iterations i
     
       if (F(a) == 0)                      //check if a is the 0          
@@ -71,13 +70,11 @@ class Bisection
             {                                                     // because b and c have opposite signs, meaning a 0 lies between b and c
                a = c;                                            // so a is moved to c, to close in on the 0
                c = (a+b)/2;
-               F(c);
             }
             if((F(a)*F(c))<0)                                     //bisect and reset b at c if (F(a)*F(c))<0
             {                                                     // because a and c have opposite signs, meaning a 0 lies between a and c
                b = c;                                             // so b is moved to c, to close in on the 0
                c = (a+b)/2;
-               F(c);
             }
       }
 
