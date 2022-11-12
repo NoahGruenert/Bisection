@@ -42,7 +42,7 @@ class Bisection
       Bisection Q = new Bisection();                           //instantiate Bisection class
       Returners d = Q.Bisect(a,b,c,e);                         //Instantiate return structure and proceed with Bisecting
       Console.WriteLine($"The zero of -x*x+2 is approximately {d.k}, interval {a} to {b} bisected {d.j} times.");     //tell the world about it
-         
+
    }
 
    public Returners Bisect(float a, float b, float c, double e)
@@ -71,10 +71,13 @@ class Bisection
                a = c;                                            // so a is moved to c, to close in on the 0
                c = (a+b)/2;
             }
-            if((F(a)*F(c))<0)                                     //bisect and reset b at c if (F(a)*F(c))<0
-            {                                                     // because a and c have opposite signs, meaning a 0 lies between a and c
-               b = c;                                             // so b is moved to c, to close in on the 0
-               c = (a+b)/2;
+            else
+            {
+               if((F(a)*F(c))<0)                                     //bisect and reset b at c if (F(a)*F(c))<0
+               {                                                     // because a and c have opposite signs, meaning a 0 lies between a and c
+                  b = c;                                             // so b is moved to c, to close in on the 0
+                  c = (a+b)/2;
+               }
             }
       }
 
